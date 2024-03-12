@@ -6,6 +6,7 @@ public class acc_DynamicSOQL {
         //Dynamic SOQL Query
         String accountquery='SELECT count() FROM Account';
         integer accountrecordcount=database.countquery(accountquery);
+        //Adding Component to test Repository
         System.debug('Account Record Count is...:'+accountrecordcount);
     }
 }

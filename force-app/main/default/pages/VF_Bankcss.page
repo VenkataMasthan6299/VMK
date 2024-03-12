@@ -1,0 +1,29 @@
+<apex:page >
+    <style>
+        .div{
+        display:block;
+        height:200px;
+        width:50%;
+        margin:100px;
+        background-color: #FFA500;
+        }
+    </style>
+    <div class="div">
+        <h6 style="color:white; font-size:25px;">Send me upto USD 300,000 to India in a single transaction 
+        </h6>
+        <p style="color:white; fint-size:15px;">Zero tranfer fees for transfors above USD 1,000</p>                                    
+        <style>
+            .test{
+            color:red;
+            font-size:10px;
+            background-color:red;
+            border-radius:12px;
+            padding:5px;
+            }
+        </style>  
+        <button class="test">
+            REGISTER NOW
+        </button>
+        <span style="color:white; font-size:10px;"> *T&amp;C apply &copy;</span>
+    </div>
+</apex:page>

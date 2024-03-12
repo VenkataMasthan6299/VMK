@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:form >
+        <apex:pageblock >
+              <apex:pageBlockSection title="B.Tech">
+                <apex:selectCheckboxes label="Courses" layout="pagedirection" >                                            
+                        <apex:selectOption itemLabel="CSE" itemValue="cse"> </apex:selectOption>
+                        <apex:selectOption itemLabel="ECE" itemValue="ece"> </apex:selectOption>
+                        <apex:selectOption itemLabel="EEE" itemValue="eee"> </apex:selectOption>
+                        <apex:selectOption itemLabel="MECH" itemValue="mech"> </apex:selectOption>
+                        <apex:selectOption itemLabel="CE" itemValue="ce"> </apex:selectOption>                    
+                </apex:selectCheckboxes>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page standardController="Contact">
+    <apex:form >
+    <apex:pageblock title="Contact">
+        
+        <apex:pageblockSection title="Contact Detail Information" columns="1"> 
+            <apex:detail inlineEdit="true" relatedList="true" subject="{!Contact.OwnerId}"/>            
+        </apex:pageblockSection> 
+        
+         <apex:pageblockSection title="Contact Owner Details" columns="1">
+            <apex:detail inlineEdit="true" relatedList="true" subject="{!Contact.OwnerId}"/>            
+        </apex:pageblockSection>
+        
+    </apex:pageblock> 
+    </apex:form>
+</apex:page>

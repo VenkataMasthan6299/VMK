@@ -1,0 +1,42 @@
+<apex:page standardController="Lead" tabStyle="Opportunity">
+    <apex:pageblock >
+        <style>
+            .newLink
+         {
+            font-weight:bold;
+            font-size:large;
+            color:blue !important;
+         }       
+        </style>
+        <apex:pageBlockSection title="Lead Information">
+            <apex:outputField value="{!Lead.Name}"/>
+            <apex:outputField value="{!Lead.MobilePhone}" label="Mobile"/>
+            <apex:outputField value="{!Lead.Rating}"/>
+            <apex:outputField value="{!Lead.Website}"/>       
+        </apex:pageBlockSection>   
+    </apex:pageblock>
+    
+    <apex:pageblock >
+        <apex:pageBlockSection title="Address Information">
+            <apex:outputField value="{!Lead.Street}"/>
+            <apex:outputField value="{!Lead.City}"/>
+            <apex:outputField value="{!Lead.PostalCode}"/>
+            <apex:outputField value="{!Lead.Industry}"/> 
+             <apex:outputField value="{!Lead.LeadSource}"/> 
+             <apex:outputField value="{!Lead.Status}" label="Lead Status"/> 
+        </apex:pageBlockSection>   
+    </apex:pageblock>
+    
+    <apex:pageblock >
+        <apex:pageBlockSection title="Other Information">
+            <apex:outputField value="{!Lead.Description}"/>
+            <apex:outputField value="{!Lead.AnnualRevenue}"/>
+            <apex:outputField value="{!Lead.Industry}"/>
+            <apex:outputField value="{!Lead.LeadSource}"/> 
+             <apex:outputField value="{!Lead.Status}" label="Lead Status"/> 
+        </apex:pageBlockSection>  
+        <div style="text-align:center">
+            <apex:outputLink value="https://www.salesforce.com" styleClass="newLink" target="_blank">www.salesforce.com</apex:outputLink>
+        </div>
+    </apex:pageblock>
+</apex:page>

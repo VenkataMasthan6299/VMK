@@ -1,0 +1,16 @@
+<apex:page standardController="contact">
+    <apex:outputLink value="http://google.com/search" target="_blank">
+    Search Google 
+        <apex:param name="q" value="{!contact.name}"/>
+    </apex:outputLink><br/>
+    
+    <apex:outputLink value="https://d2w00000rsuvuea3-dev-ed--c.develop.vf.force.com/apex/VF_OppInfoUC?" target="_blank">
+        Opportunity VF page
+        <apex:param name="id" value="0062w00000MlGWrAAN"/>
+    </apex:outputLink><br/>
+    
+    <apex:outputLink value="{!URLFOR('/apex/VF_OppInfoUC')}" target="_blank">
+    URLFOR VF page
+    <apex:param name="id" value="0062w00000MlGWrAAN"/>
+    </apex:outputLink>
+</apex:page>

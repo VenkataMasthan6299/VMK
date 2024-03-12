@@ -1,0 +1,7 @@
+<apex:page lightningStylesheets="true" standardController="case">
+    <!--<flow:interview name="Screen_Flow"> </flow:interview>-->
+    <flow:interview name="Move_Case_to_Escalated"> 
+    <apex:param name="caseid" value="{!Case.Id}"/>
+    </flow:interview>
+    <c:VF_Component1 />
+</apex:page>

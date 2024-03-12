@@ -1,0 +1,58 @@
+<apex:page standardController="Contact" recordSetVar="con">
+    <style>
+        .white
+        {
+        background-color:white;
+        }
+        .blue
+        {
+        background-color:#0000ff33;
+        }
+    </style>
+    <apex:tabPanel selectedTab="listview">
+        <!--Pageblock Table-->
+        <apex:tab label="Contact Details - Pageblock Table">
+            <apex:pageblock >
+                <apex:pageBlockSection title="PageblockTable Information" columns="1" >
+                    <apex:pageblockTable value="{!con}" var="cn" rowClasses="white,blue" >
+                        <apex:column value="{!cn.firstName}" headerValue="FName"/> 
+                    <apex:column value="{!cn.LastName}"/>
+                <apex:column value="{!cn.Email}"/>
+            <apex:column value="{!cn.MobilePhone}"/> 
+                    </apex:pageblockTable>
+                </apex:pageBlockSection>
+            </apex:pageblock>                        
+        </apex:tab> 
+        
+        <!--Data Table-->
+        <apex:tab label="Contact Details - Data Table">
+             <apex:pageblock title="Data Table">
+             <apex:dataTable value="{!con}" var="c" width="70%" border="2" rowClasses="white,blue">
+                <apex:column value="{!c.FirstName}" headerValue="FirstName"></apex:column>
+                <apex:column value="{!c.LastName}" headerValue="LastName"></apex:column>
+                <apex:column value="{!c.Email}" headerValue="Email"></apex:column>
+                <apex:column value="{!c.MobilePhone}" headerValue="MobilePhone"></apex:column>
+            </apex:dataTable>
+            </apex:pageblock>
+      </apex:tab>
+        
+        <!--Data List-->
+        <apex:tab label="Data List">
+            <apex:pageblock >
+            <apex:dataList value="{!con}" var="ct">
+                <apex:pageblockSection title="Data List">
+                <apex:outputField value="{!ct.FirstName}"/>
+                <apex:outputField value="{!ct.LastName}"/>
+                <apex:outputField value="{!ct.Email}"/>
+                <apex:outputField value="{!ct.MobilePhone}"/>
+                </apex:pageblockSection>
+            </apex:dataList>
+            </apex:pageblock>
+        </apex:tab>
+        
+       <!--List View-->
+        <apex:tab label="List View" name="listview">
+            <apex:listViews type="Lead"/>
+        </apex:tab>
+    </apex:tabPanel>   
+</apex:page>

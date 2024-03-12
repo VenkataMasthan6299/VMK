@@ -1,0 +1,36 @@
+<apex:page >
+    <apex:form >
+    <apex:pageblock title="ABC Hospital" helpTitle="know about salesforce" helpUrl="https://www.salesforce.com">
+        <apex:pageblockButtons location="bottom">
+            <apex:commandButton action="{!save}" value="save"/>           
+        </apex:pageblockButtons>        
+        <apex:pageblockSection title="Patient Details">          
+            Patient Name :<apex:inputText />       
+            Patient Address :<apex:inputTextarea />             
+            Patient Phone Number : <apex:inputText />                
+            Working :<apex:inputCheckbox />
+            Upload file :<apex:inputFile value="Upload File"/>             
+        </apex:pageblockSection>
+    </apex:pageblock>      
+      <apex:pageblock title="ABC Hospital" helpTitle="know about salesforce" helpUrl="https://www.salesforce.com">
+          <apex:pageblockButtons location="bottom">
+            <apex:commandButton action="{!save}" value="save"/>           
+        </apex:pageblockButtons> 
+         <apex:pageblockSection title="Patient Details">
+               <apex:outputLabel value="Patient Name :">
+                  <apex:inputText />
+               </apex:outputLabel>
+               <apex:outputLabel value="Patient Address :">
+                  <apex:inputTextarea />
+               </apex:outputLabel>
+               <apex:outputLabel value="Patient Phone Number :">
+                  <apex:inputText />
+               </apex:outputLabel>
+               <apex:outputLabel value="Working">
+                  <apex:inputCheckbox />
+               </apex:outputLabel>
+                  <apex:inputFile value="Upload File"/>           
+        </apex:pageblockSection>
+    </apex:pageblock>
+    </apex:form>
+</apex:page>

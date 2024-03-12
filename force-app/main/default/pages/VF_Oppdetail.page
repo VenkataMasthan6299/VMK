@@ -1,0 +1,21 @@
+<apex:page >
+    <apex:pageblock >
+        
+        <apex:image url="https://d2w00000rsuvuea3-dev-ed--c.develop.vf.force.com/resource/1688037360000/SwapnaITLogo?" height="100px"/>
+        
+        <apex:pageBlockSection title="Hello{!$Profile.Name}" columns="1">
+            Welcome to Opportunity page 0062w00000MOXWjAAP
+            
+        <apex:pageBlockSection title="Hello{!$Organization.Name} - {!$Profile.Name} {!$User.FirstName} {!$User.LastName}" columns="1">
+            Displaying Opportunity Information
+            
+        <apex:pageBlockSection title="Opportunity">
+            <apex:detail showChatter="true" relatedList="false"/>
+        </apex:pageBlockSection>
+            
+        </apex:pageBlockSection>  
+            
+        </apex:pageBlockSection>   
+        
+    </apex:pageblock>     
+</apex:page>

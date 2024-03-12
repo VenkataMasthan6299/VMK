@@ -1,0 +1,16 @@
+<apex:page id="p1">
+    <apex:form id="f1">
+        <apex:inputText id="in1" onchange="validateInputText()"/>
+    </apex:form>
+    <!--regex A-F, x-z, 1-5 -->
+    <script>
+      function validateInputText(){
+          var a=document.getElementById('p1:f1:in1').value;
+          var regex=/^([A-F$%x-z1-5]+)$/;
+          if(regex.test(a)!=true){
+             alert("Please Enter Correct Value");
+              var a=document.getElementById('p1:f1:in1').value='ABD';
+          }
+       }
+    </script>
+</apex:page>

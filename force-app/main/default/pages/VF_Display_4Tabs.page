@@ -1,0 +1,18 @@
+<apex:page >
+    <apex:tabPanel >
+        
+        <!--tab 1-->
+        <apex:tab label="Lead Information - List">
+            <apex:image url="https://d2w00000rsuvuea3-dev-ed.develop.lightning.force.com/lightning/o/Lead/list?filterName=Recent"/>
+        </apex:tab>          
+         <!--tab 2-->
+        <apex:tab label="Account information-To Be Decided"></apex:tab>
+         <!--tab 3-->
+        <apex:tab label="Account information –using Output Field"></apex:tab>
+         <!--tab 4-->
+        <apex:tab label="Tab3-page Table Account Display"></apex:tab>
+         <!--tab 5-->
+        <apex:tab label="Tab4 – Data Table Account Display"></apex:tab>
+        
+     </apex:tabPanel>
+</apex:page>

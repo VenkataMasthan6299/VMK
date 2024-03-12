@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Related Contacts" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={Contacts.data} for:item="contact">
+                <li key={Contact.Id}> {Contact.FirstName} - {Contact.LastName}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

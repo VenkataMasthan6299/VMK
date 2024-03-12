@@ -1,0 +1,12 @@
+<apex:page standardController="Contact" >
+    <apex:pageblock title="user firstname:{!$User.FirstName}- user lastname:{!$User.LastName}- profile name:{!$Profile.Name}">
+        <apex:pageblockSection title="Contact Details" columns="3" >
+            <apex:detail inlineEdit="true" relatedList="false"/>
+            <apex:detail relatedList="false" subject="{!Contact.AccountId}"/>
+            <apex:detail relatedList="false" subject="{!Contact.Account.ownerId}"/>
+        </apex:pageblockSection>
+        <apex:pageblockSection title="Owner Details" columns="1">
+            <apex:detail relatedList="false" subject="{!Contact.AccountId}"/>
+        </apex:pageblockSection>
+    </apex:pageblock>
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page >
+    Display page Block in apex:page
+    <apex:pageBlock title="Contacts" helpTitle="Contact help" helpUrl="https://help.salesforce.com/s/articleView?id=sf.contacts_overview.htm&type=5">
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Opportunity" helpTitle="Opportunity help" helpUrl="https://help.salesforce.com/s/articleView?id=sf.opportunities.htm&type=5">
+    </apex:pageBlock>
+    
+    <apex:pageBlock title="Orders" helpTitle="Order help" helpUrl="https://help.salesforce.com/s/articleView?id=sf.cases_edit.htm&type=5">
+    </apex:pageBlock>
+    
+</apex:page>

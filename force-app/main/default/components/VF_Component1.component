@@ -1,0 +1,6 @@
+<apex:component >
+    <apex:pageBlock title="Student Information">
+        Student Number <br/>
+        Student Name
+    </apex:pageBlock>
+</apex:component>

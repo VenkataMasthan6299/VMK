@@ -1,0 +1,15 @@
+<apex:page Controller="ShowAllAccountRecords" sidebar="false" showHeader="false" tabStyle="Position__c">
+    <apex:sectionHeader title="Account" subtitle="All Accounts"/>
+    <apex:form >
+        <apex:pageblock title="All Accounts : ({!accList.size})">
+            <apex:pageBlockTable value="{!accList}" var="acc">
+                <apex:column value="{!acc.Name}"/>
+                <apex:column value="{!acc.Industry}"/>
+                <apex:column value="{!acc.AnnualRevenue}"/>
+                <apex:column value="{!acc.Rating}"/>
+                <apex:column value="{!acc.Type}"/>
+                <apex:column value="{!acc.Active__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

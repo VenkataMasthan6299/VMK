@@ -1,0 +1,14 @@
+<apex:page id="pg">
+    <apex:form id="fm">
+        <apex:inputText id="nm" onChange="captureData()"/>
+        <script>
+        function captureData()
+        {
+            var pannumber=document.getElementById('pg:fm:nm').value;
+            alert('This is 1st alert ' +pannumber);
+            var pan=document.getElementById('{!$Component.nm}').value;
+            alert('This is 2nd alert ' +pan);
+            }
+        </script>
+    </apex:form>
+</apex:page>

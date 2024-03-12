@@ -1,0 +1,44 @@
+<apex:page standardController="Account">
+    <style>
+        .active{
+        background-color:#1441e1a8;
+        color:blue;
+        background-image:none;
+        }
+        .inactive{
+        background-color:lightgray;
+        color:black;
+        background-image:none;
+        }
+    </style>
+    <apex:tabPanel selectedTab="tab2" tabClass="active" inactiveTabClass="inactive">
+        
+        <!--Tab1-->
+        <apex:tab label="SwapnaIT LOGO">
+            <apex:image value="{!$Resource.SwapnaITLogo}" height="100px"/> <br/>
+            <apex:image url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2TbM6AQkXnrDRAI-qOP8FlrT3H1nZlXLKth01-GsaPnyvmo&s" height="100px" />            
+        </apex:tab>
+        
+         <!--Tab2-->
+        <apex:tab name="tab2" label="Account Owner Information">
+            <apex:detail relatedList="false" subject="{!Account.OwnerId}"/>
+        </apex:tab>
+        
+         <!--Tab3-->
+        <apex:tab label="Account Information">
+            <apex:detail relatedList="false"/>
+        </apex:tab>
+        
+         <!--Tab4-->
+        <apex:tab label="Other" style="background:#bbe917">
+          <div>
+            <ul style="float:right">          
+              <li>user firstname:{!$User.FirstName}<br/></li>
+              <li>user lastname:{!$User.LastName} <br/></li>
+              <li>profile name:{!$Profile.Name}<br/></li>
+           </ul>
+         </div>
+        </apex:tab> 
+        
+    </apex:tabPanel>
+</apex:page>

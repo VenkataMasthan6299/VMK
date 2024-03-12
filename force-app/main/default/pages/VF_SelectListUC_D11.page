@@ -1,0 +1,19 @@
+<apex:page >
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageblockSection title="SelectList">
+                <apex:selectList label="Courses" size="4" multiselect="true">
+                    <apex:selectOption itemLabel="Salesforce" itemValue="sales"></apex:selectOption>
+                    <apex:selectOption itemLabel="Apex" itemValue="Ap"></apex:selectOption>
+                    <apex:selectOption itemLabel="LWC" itemValue="lwc"></apex:selectOption>
+                    <apex:selectOption itemLabel="Aura" itemValue="aura"></apex:selectOption>
+                    <apex:selectOption itemLabel="Integration" itemValue="intg"></apex:selectOption>
+                    <apex:selectOption itemLabel="Development" itemValue="dev"></apex:selectOption>
+                    <apex:selectOption itemLabel="CPQ" itemValue="cpq"></apex:selectOption>
+                    <apex:selectOption itemLabel="SOQL" itemValue="soql"></apex:selectOption>
+                    <apex:selectOption itemLabel="SOSL" itemValue="sosl"></apex:selectOption>
+                </apex:selectList>
+            </apex:pageblockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

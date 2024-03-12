@@ -1,0 +1,23 @@
+<apex:page standardController="Account"  >
+    <apex:pageblock >
+        
+        <div style="text-align:center; color:red; font-size:large;" >
+          <b>Welcome to Swapna IT</b>
+        </div>
+              
+        <apex:pageblockSection title="All Visualforce page Information" > 
+             
+            <apex:outputLabel style="color:blue;font:bold"><b>Today</b></apex:outputLabel> 
+             <apex:outputtext value="{0,date,dd/MM/yyyy}">
+             <apex:param value="{!Now()}"/>
+             </apex:outputtext>
+            
+             <apex:outputLabel style="color:blue;"><b>This is my output page</b></apex:outputLabel>
+             <apex:outputLink value="https://www.salesforce.com" target="_blank">Open Output Component</apex:outputLink>
+            
+             <apex:outputLabel style="color:blue;"><b>This is my input page</b></apex:outputLabel>
+             <apex:outputLink value="https://google.com"  target="_blank">Open input Component</apex:outputLink>
+        
+        </apex:pageblockSection>           
+    </apex:pageblock>
+</apex:page>

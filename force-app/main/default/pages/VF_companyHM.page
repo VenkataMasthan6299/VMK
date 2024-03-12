@@ -1,0 +1,41 @@
+<apex:page >
+    <apex:form >
+     <apex:pageblock title="Company">
+        <apex:pageBlockSection title="Employee Personal Details">
+            <apex:outputLabel value="Employee First Name : ">
+                <apex:inputText />
+            </apex:outputLabel> 
+            <apex:outputLabel value="Employee Last Name : ">
+                <apex:inputText />
+            </apex:outputLabel>
+            <apex:outputLabel value="Employee Address : ">
+                <apex:inputTextarea />
+            </apex:outputLabel>
+            <apex:outputLabel value="Employee Phone Number : ">
+                <apex:inputText />
+            </apex:outputLabel>
+            <apex:outputLabel value="Employee ID : ">
+                <apex:inputText />
+            </apex:outputLabel>
+        </apex:pageBlockSection> 
+     </apex:pageblock>
+        
+      <apex:pageblock >
+        <apex:pageblockButtons location="bottom">
+            <apex:commandButton action="{!save}" value="save"/>           
+        </apex:pageblockButtons> 
+        <apex:pageBlockSection title="Employee Laptop Details"> 
+            <apex:outputLabel value="Login/UserName : ">
+                <apex:inputText />
+            </apex:outputLabel> 
+            <apex:outputLabel value="Laptop Password : ">
+                <apex:inputSecret />
+            </apex:outputLabel> 
+            <apex:outputLabel value="Still Working with Company : ">
+                <apex:inputCheckbox />
+            </apex:outputLabel> 
+                <apex:inputFile value="Upload File"/> 
+        </apex:pageBlockSection>
+      </apex:pageblock>
+    </apex:form>            
+</apex:page>

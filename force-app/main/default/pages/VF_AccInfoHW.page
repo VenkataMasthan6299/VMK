@@ -1,0 +1,36 @@
+<apex:page standardController="Account" tabStyle="Opportunity" >
+    <apex:pageblock >
+       
+        <style>
+            .newLink
+          {
+            font-weight:bold;
+            font-size:large;
+            color:blue !important;
+            }
+        </style>
+        
+        <apex:pageblockSection title="Account Information">
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+            <apex:outputField value="{!Account.Description}"/>
+            <apex:outputField value="{!Account.AccountNumber}" label="Name"/>
+            <apex:outputField value="{!Account.Rating}"/>
+            <apex:outputField value="{!Account.AnnualRevenue}"/>
+            <apex:outputField value="{!Account.Type}"/>       
+        </apex:pageblockSection>   
+    </apex:pageblock>
+        
+    <apex:pageblock >
+        <apex:pageblockSection title="Address Information">
+            <apex:outputField value="{!Account.BillingStreet}"/>
+            <apex:outputField value="{!Account.BillingCity}"/>
+            <apex:outputField value="{!Account.BillingState}"/>
+            <apex:outputField value="{!Account.BillingPostalCode}"/>            
+        </apex:pageblockSection>
+        <div style="text-align:Center;">
+            <b><apex:outputLink value="https://www.salesforce.com" styleClass="newLink" target="_blank">www.salesforce.com
+                </apex:outputLink></b>
+        </div>       
+    </apex:pageblock>
+</apex:page>

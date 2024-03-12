@@ -1,0 +1,62 @@
+<apex:page >
+	<apex:form >
+    <!--Contacts-->
+    <apex:pageblock title="Contacts" helpTitle="Contacts help" helpUrl="https://www.salesforce.com">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!NewContact}" value="NewContact"/>
+            <apex:commandButton action="{!MergeContacts}" value="MergeContacts"/>
+        </apex:pageBlockButtons>
+        <!--Contact information-->
+        <apex:pageBlockSection title="Contact information">
+        </apex:pageBlockSection>
+    </apex:pageblock>
+        
+        <!--Opportunities-->
+        <apex:pageblock title="Opportunities" helpTitle="Opportunity help" helpUrl="https://www.salesforce.com">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!NewOpportunity}" value="NewOpportunity"/>
+             </apex:pageBlockButtons>
+            <!--Opportunity information-->
+            <apex:pageBlockSection title="Opportunity information">
+        </apex:pageBlockSection>
+    </apex:pageblock>
+        
+         <!--Orders-->
+        <apex:pageblock title="Orders" helpTitle="Order help" helpUrl="https://www.salesforce.com">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!NewOrder}" value="NewOrder"/>
+             </apex:pageBlockButtons>
+            <!--Order Details-->
+            <apex:pageBlockSection title="Order Details">
+        </apex:pageBlockSection>
+    </apex:pageblock>
+          
+        <!--Open Activities-->
+        <apex:pageBlock title="Open Activities" helpTitle="Open Activities help" helpUrl="https://www.salesforce.com">
+            <apex:pageblockButtons location="top">
+                <apex:commandButton action="{!NewTask}" value="NewTask"/> 
+                <apex:commandButton action="{!NewEvent}" value="NewEvent"/> 
+            </apex:pageblockButtons>
+            <!--Task Details-->
+            <apex:pageBlockSection title="Task Details">
+        </apex:pageBlockSection>
+            <!--Event Details-->
+            <apex:pageBlockSection title="Event Details">
+        </apex:pageBlockSection>
+            <!--Communication Details-->
+            <apex:pageBlockSection title="Communication Details">
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <!--Cases-->
+        <apex:pageblock title="Cases" helpTitle="Cases help" helpUrl="https://www.salesforce.com">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton action="{!NewCase}" value="NewCase"/>
+             </apex:pageBlockButtons>
+            <!--Case Details-->
+            <apex:pageBlockSection title="Case Details">
+        </apex:pageBlockSection>
+    </apex:pageblock>
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:page >
+    <apex:stylesheet value="{!$Resource.bankcss}"/>
+    <h1>
+        WELCOME TO SWAPNA IT
+    </h1>
+    <br/>
+    <apex:outputText title="help" value="This is {0} day {1} class {2}">
+        <apex:param value="First"/>
+        <apex:param value="VF Page"/>
+        <apex:param value="in 2023"/>
+    </apex:outputText>
+    <p>
+        Start helping your customers today. The Service Setup Assistant creates a ready-to-use 
+        Service Cloud app that can be customized for your team.
+    </p>
+    <apex:outputLink value="https://www.salesforce.com" styleClass="newLink" target="_blank" title="salesforce">
+        Open Salesforce
+    </apex:outputLink>
+</apex:page>

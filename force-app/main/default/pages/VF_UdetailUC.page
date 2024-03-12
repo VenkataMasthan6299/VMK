@@ -1,0 +1,12 @@
+<apex:page >
+    <div>
+      <ul style="float:right">
+          
+    <li>user firstname:{!$User.FirstName}<br/></li>
+    <li>user lastname:{!$User.LastName} <br/></li>
+    <li>profile name:{!$Profile.Name}<br/></li>
+      </ul>
+    </div>
+    <apex:image url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2TbM6AQkXnrDRAI-qOP8FlrT3H1nZlXLKth01-GsaPnyvmo&s" height="100px" />
+    <apex:image value="{!$Resource.SwapnaITLogo}" height="100px"/>
+</apex:page>

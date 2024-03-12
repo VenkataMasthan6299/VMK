@@ -1,0 +1,31 @@
+<apex:page >
+    <apex:form >
+    <!--Career Objective-->
+    <apex:pageblock title="Career Objective" helpTitle="More Details" helpUrl="https://www.salesforce.com">
+        <apex:pageblockButtons location="top">
+            <apex:commandButton action="{!save}" value="save"/>
+        </apex:pageblockButtons>
+        
+        <!--Professional Experience-->
+        <apex:pageblockSection title="Professional Experience">
+        </apex:pageblockSection>
+        
+        <!--Education-->
+        <apex:pageblockSection title="Education">
+        </apex:pageblockSection>
+        
+        <!--Technical Skills-->
+        <apex:pageblockSection title="Technical Skills">
+        </apex:pageblockSection>
+        
+        <!--Projects-->
+        <apex:pageblockSection title="Projects">
+        </apex:pageblockSection>
+        
+        <!--Achievments-->
+        <apex:pageblockSection title="Achievments">
+        </apex:pageblockSection>
+        
+    </apex:pageblock>
+    </apex:form>
+</apex:page>

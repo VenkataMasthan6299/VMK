@@ -1,0 +1,13 @@
+<apex:page standardController="Opportunity">
+    <apex:pageblock title="Opportunity">
+        <apex:pageblockSection title="Detail Information of Opportunity" columns="3">
+            <apex:detail inlineEdit="true" relatedList="false" subject="{!Opportunity.AccountId}"/>
+            <apex:detail inlineEdit="true" relatedList="false" subject="{!Opportunity.OwnerId}"/>  
+            <apex:detail inlineEdit="true" relatedList="false" subject="{!Opportunity.OwnerId}"/>
+        </apex:pageblockSection>
+        
+        <apex:pageblockSection title=" Account Detail ">
+            <apex:detail inlineEdit="true" relatedList="false" subject="{!Opportunity.AccountId}"/>
+        </apex:pageblockSection>
+    </apex:pageblock>
+</apex:page>
